@@ -29,14 +29,13 @@ const getForecast = () => __awaiter(void 0, void 0, void 0, function* () {
 const displayForecast = (forecasts) => {
     if (output) {
         output.innerHTML = forecasts
-            .map((forecast) => `
+            .map(forecast => `
         <tr>
-        <td>${forecast.date}: </td>
-        <td>${forecast.temperatureF}°F</td>
-        <td>${forecast.summary}</td>
+          <td>${forecast.date}: </td>
+          <td>${forecast.temperatureF}°F</td>
+          <td>${forecast.summary}</td>
         </tr>
-      `)
-            .join("");
+      `).join("");
     }
 };
 const printForecast = () => __awaiter(void 0, void 0, void 0, function* () {
