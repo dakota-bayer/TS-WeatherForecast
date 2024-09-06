@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>TypeScript Weather Forecast Display</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>TypeScript Weather Forecast Display</h1>
     <button id="getForecastBtn">Get Forecast!</button>
-    <p id="output"></p>
-    <script src=".\build\index.js"></script>
+    <table id="output"></table>
+    <script type="module" src="./build/index.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
   </body>
+  <footer>
+    This displays a fictional weather forecast by calling a locally running api.
+  </footer>
 </html>
